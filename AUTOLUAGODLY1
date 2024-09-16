@@ -309,3 +309,5 @@ player.CharacterAdded:Connect(onCharacterAdded)
 if player.Character then
     onCharacterAdded(player.Character)
 else
+    player.CharacterAdded:Wait()
+end
